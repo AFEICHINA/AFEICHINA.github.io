@@ -58,17 +58,28 @@
 	</p>
 	</br>
 	</br>
-		<p align="center"><img src="./imgs/2.png" alt=""/></p></br>
+	<p align="center"><img src="./imgs/2.png" alt=""/></p></br>
 	</br>
 	<p align="center">
-	Figure 2:Our warp-based approach manipulates motion in videos by tracking featrue points and warpping the images. The method proposed in this paper calculates feature points in the first frame of the video and tracks these feature points in subsequent frame sequences. For some video sequences, tracking feature points in the ROI area gives better results.
-</p> 
+		Figure 2:Our warp-based approach manipulates motion in videos by tracking featrue points and warpping the images. The method proposed in this paper calculates feature points in the first frame of the video and tracks these feature points in subsequent frame sequences. For some video sequences, tracking feature points in the ROI area gives better results.
+	</p> 
 
 	</br>
 
 <h2>Introduction</h2>
 	<p align="justify">Leveraging current Lagrangian based techniques,we propose a warp-based video motion magnificationin in this paper. We assumed that the reasonable deformation creat similar effects as subtle motion in each frame. Our method does not need a lot of manual intervention, but only a few of feature points that need to be tracked, then it warps the frame to realize motion magnification without amplifying noise. Moreover, it doesn’t need to design filters, which preserves all the details in video to the greatest extent. The main contributions of this paper are as follows: 1)We present a simplified Lagrangian subtle motion magnification, which barely needs manual intervention. 2)The ”as-similar-as-possible” approach is applied to motion amplification. 3)Foreground separation and texture synthesis are used in our magnification to improve the details.
 	</p>
+	<p align="center"><img src="./imgs/5.png" alt=""/></p></br>
+	</br>
+	<p align="center">
+		Figure 3:Image quality comparison. (b, c, d) is the baby magnification sequence (magnification 20 times), phase-based method shows more ringing artifacts and blurring, and the learning-based method is blurring at the details. Our method proposed in this paper is better. The image details are preserved and there is no magnification noise.
+	</p>
+	<p align="center"><img src="./imgs/4.png" alt=""/></p></br>
+	</br>
+	<p align="center">
+		Figure 4:(a) The phase-based approach uses spatial decomposition filters and time filters to show severe ringing artifacts; (b) Learningbased methods learn spatial decomposition filters directly from image frames, in static better edges and fewer ringing artifacts can be obtained in the static mode; (c) We do not use spatial and temporal filters and can obtain the results of the approximate when comparing with the learning-based method.
+	</p>
+	
 <h2>Video</h2>
 </br>
 	</br>
