@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="assets/css/typo.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <script src="./assets/js/index.js"></script>
 </head>
 
 <body>
-
     <header class="header"></header>
 
     <article class="container">
@@ -67,7 +67,7 @@
                     </div>
                     <!-- 头像照片 -->
                      <!--<img class="avatar" src="/resume/assets/images/avatar_syf.jpg" onload="loading()">-->
-                     <img class="avatar_syf" src="./assets/images/avatar_syf.jpg" onload='document.querySelector(".me .loading").style.display = "none";document.querySelector(".me .avatar_syf").style.display = "block";'>
+                     <img class="avatar_syf" src="./assets/images/avatar_syf.jpg" onload="load()">
                 </section>
 
                 <h1 class="name">施云飞</h1>
@@ -140,6 +140,12 @@
                         <progress value="65" max="100"></progress>
                     </li>              
                 </ul>
+            </section>
+
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                <hr/>
+                <img src="https://github.com/if2er/FeZaoDuKe-Collection/blob/master/ifeees.jpg?raw=true" style="width: 100%;" alt="">
             </section>
 
             <!-- 技术栈 -->
@@ -353,8 +359,7 @@
             </li>
         </ul>
     </aside>
-
-    <script src="./assets/js/index.js"></script>
+    
 </body>
 
 </html>
