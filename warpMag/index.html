@@ -39,22 +39,24 @@
 	<p align="center">
 		<sup>1</sup><a href="https://github.com/AFEICHINA"/>Yunfei Shi</a>*&nbsp;&nbsp;
 		<sup>1</sup><a href="hzy@hzy.org.cn"/>Zhiyong Huang</a>*&nbsp;&nbsp;
-		<sup>2</sup><a href="yirongwu@gmail.com"/>Yirong Wu</a>&nbsp;&nbsp;
-		<sup>1</sup><a href="watersun1977@hotmail.com"/>Shuifa Sun</a>*&nbsp;&nbsp;
+		<sup>1</sup><a href="yirongwu@gmail.com"/>Yirong Wu</a>&nbsp;&nbsp;
+		<sup>1,2</sup><a href="watersun1977@hotmail.com"/>Shuifa Sun</a>*&nbsp;&nbsp;
 		<sup>1</sup><a href="fmdong@ctgu.edu.cn">Fangmin Dong</a>&nbsp;&nbsp;
 	</p>
-	<p align="center"><sup>1</sup>China Three Gorges University&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Department of Electrical Engineering and Computer Science,University of Wisconsin-Milwaukee, Milwaukee, USA&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		<p align="center">
+			<sup>1</sup>College of Computer and Information Technology,China Three Gorges University, Yichang, Hubei, P.R.China&nbsp;&nbsp;&nbsp;&nbsp;
+			<sup>2</sup>Department of Electrical Engineering and Computer Science,University of Wisconsin-Milwaukee, Milwaukee, USA&nbsp;&nbsp;&nbsp;&nbsp;
+		</p>
 	</br></br>
 	<p align="center"><img src="./imgs/fbe1.png" alt="" width="600"/></p></br>
-	<p align="center">
-Figure 1: An example of minimizing FBE. As FBE reducing, the energy of C in subregions gradually vanishes. Finally, Ct is restricted
-to C with segmentation result obtained.
+
+	<p align="center">Figure 1: An example of minimizing FBE. As FBE reducing, the energy of C in subregions gradually vanishes. Finally, Ct is restricted to C with segmentation result obtained.
 	</p>
+
   <h2>Abstract</h2>
-	<p align="justify">
-We present a warp-based video motion magnification, in which only one-frame latency is maintained. Video motion magnification can amplify subtle motions and even reveal small color changes in video sequences. Current techniques analayz the signals of each pixel over time in differtent spatial scales and orientations, which inevitably amplifies the noise and results in ringing artifacts in video. The start-of-the-art techniques relying on filters by learning also have excessive blurring in images. In this paper, we propose a simple Lagrangian technique, which involves image deformation and optical flow. We achieve motion magnification by warping the frame in video, which is guided by feature points and only uses motions from the past, keeping the original video details without amplifying noise at the same time. In this way, the proposed method can work online in real time. Experimental results show that our method can achieve high-quality results and significantly reduce artifacts while comparing to the state-of-the-art.
-</p>
-</br>
+	<p align="justify">We present a warp-based video motion magnification, in which only one-frame latency is maintained. Video motion magnification can amplify subtle motions and even reveal small color changes in video sequences. Current techniques analayz the signals of each pixel over time in differtent spatial scales and orientations, which inevitably amplifies the noise and results in ringing artifacts in video. The start-of-the-art techniques relying on filters by learning also have excessive blurring in images. In this paper, we propose a simple Lagrangian technique, which involves image deformation and optical flow. We achieve motion magnification by warping the frame in video, which is guided by feature points and only uses motions from the past, keeping the original video details without amplifying noise at the same time. In this way, the proposed method can work online in real time. Experimental results show that our method can achieve high-quality results and significantly reduce artifacts while comparing to the state-of-the-art.
+	</p>
+	</br>
 	</br>
 		<p align="center"><img src="./imgs/fbe2.jpg" alt="" width="600"/></p></br>
 	</br>
@@ -66,13 +68,8 @@ method. The dashed line in (a) is the initial contour for all methods.
 	</br>
 
 <h2>Introduction</h2>
-<p align="justify">
-Leveraging current Lagrangian based techniques,we propose a warp-based video motion magnificationin in
-this paper. We assumed that the reasonable deformation creat similar effects as subtle motion in each frame. Our
-method does not need a lot of manual intervention, but only a few of feature points that need to be tracked, then it warps the frame to realize motion magnification without amplifying noise. Moreover, it doesn’t need to design filters, which preserves all the details in video to the greatest extent.
-The main contributions of this paper are as follows:
-1)We present a simplified Lagrangian subtle motion magnification, which barely needs manual intervention. 2)The ”as-similar-as-possible” approach is applied to motion amplification. 3)Foreground separation and texture synthesis are used in our magnification to improve the details.
-</p>
+	<p align="justify">Leveraging current Lagrangian based techniques,we propose a warp-based video motion magnificationin in this paper. We assumed that the reasonable deformation creat similar effects as subtle motion in each frame. Our method does not need a lot of manual intervention, but only a few of feature points that need to be tracked, then it warps the frame to realize motion magnification without amplifying noise. Moreover, it doesn’t need to design filters, which preserves all the details in video to the greatest extent. The main contributions of this paper are as follows: 1)We present a simplified Lagrangian subtle motion magnification, which barely needs manual intervention. 2)The ”as-similar-as-possible” approach is applied to motion amplification. 3)Foreground separation and texture synthesis are used in our magnification to improve the details.
+	</p>
 <h2>Selective Segmentation</h2>
 </br>
 	</br>
@@ -98,11 +95,12 @@ Source Code (Matlab) and Models:
 
 <h2>Citation - BibTeX</h2>
 <p align="justify">
-	<b>Frequency-tuned Active Contour Model for Biomedical Image Segmentation</b><br/>
-	Qing Guo, Shuifa Sun, Fangmin Dong, Wei Feng, Siy Ma, Bruce Z. Gao. Freqeuncy-tuned Active Contour Model for Biomedical image segmentation.<br/>
-	<i> In ICASSP 2017.(CCF-B, Oral)</i>.<br/>
+	<b>Warp-Based Video Motion Magnification for Revealing Subtle Changes</b>
+	<br/>
+		Yunfei Shi, Zhiyong Huang, Yirong Wu, Shuifa Sun, Fangmin Dong. Warp-Based Video Motion Magnification for Revealing Subtle Changes
+	<br/>
+	<i> </i>.<br/>
 	[ <a href="#">PDF</a> ]
-	[ <a href="#">PPT</a> ]
 	[ <a href="#">BibTeX</a> ]
 </p>
 
