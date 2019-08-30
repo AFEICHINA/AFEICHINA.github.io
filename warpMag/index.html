@@ -43,14 +43,14 @@
 		<sup>1,2</sup><a href="watersun1977@hotmail.com"/>Shuifa Sun</a>*&nbsp;&nbsp;
 		<sup>1</sup><a href="fmdong@ctgu.edu.cn">Fangmin Dong</a>&nbsp;&nbsp;
 	</p>
-		<p align="center">
-			<sup>1</sup>College of Computer and Information Technology,China Three Gorges University, Yichang, Hubei, P.R.China&nbsp;&nbsp;&nbsp;&nbsp;
-			<sup>2</sup>Department of Electrical Engineering and Computer Science,University of Wisconsin-Milwaukee, Milwaukee, USA&nbsp;&nbsp;&nbsp;&nbsp;
-		</p>
+	<p align="center">
+		<sup>1</sup>College of Computer and Information Technology,China Three Gorges University, Yichang, Hubei, P.R.China&nbsp;&nbsp;&nbsp;&nbsp;
+		<sup>2</sup>Department of Electrical Engineering and Computer Science,University of Wisconsin-Milwaukee, Milwaukee, USA&nbsp;&nbsp;&nbsp;&nbsp;
+	</p>
 	</br></br>
-	<p align="center"><img src="./imgs/fbe1.png" alt="" width="600"/></p></br>
+	<p align="center"><img src="./imgs/1.png" alt=""/></p></br>
 
-	<p align="center">Figure 1: An example of minimizing FBE. As FBE reducing, the energy of C in subregions gradually vanishes. Finally, Ct is restricted to C with segmentation result obtained.
+	<p align="center">Figure 1: Baby sequence and its amplification (from left) above, the method based on phase, the method based on the deep learning and the method based on image warping (this paper). For each of the amplified sequence, the location of the red line and blue line show time slice (the following), the method based on image deformation reduces the artifacts and noise, the effect and the depth of learning is closest to, and even in every frame image quality is more similar to the original image.
 	</p>
 
   <h2>Abstract</h2>
@@ -58,11 +58,10 @@
 	</p>
 	</br>
 	</br>
-		<p align="center"><img src="./imgs/fbe2.jpg" alt="" width="600"/></p></br>
+		<p align="center"><img src="./imgs/2.png" alt=""/></p></br>
 	</br>
 	<p align="center">
-	Figure 2:Segmenting optical coherence tomography (OCT) image with CV, LBF, legendre level set (L2S) and our
-method. The dashed line in (a) is the initial contour for all methods.
+	Figure 2:Our warp-based approach manipulates motion in videos by tracking featrue points and warpping the images. The method proposed in this paper calculates feature points in the first frame of the video and tracks these feature points in subsequent frame sequences. For some video sequences, tracking feature points in the ROI area gives better results.
 </p> 
 
 	</br>
@@ -70,7 +69,7 @@ method. The dashed line in (a) is the initial contour for all methods.
 <h2>Introduction</h2>
 	<p align="justify">Leveraging current Lagrangian based techniques,we propose a warp-based video motion magnificationin in this paper. We assumed that the reasonable deformation creat similar effects as subtle motion in each frame. Our method does not need a lot of manual intervention, but only a few of feature points that need to be tracked, then it warps the frame to realize motion magnification without amplifying noise. Moreover, it doesn’t need to design filters, which preserves all the details in video to the greatest extent. The main contributions of this paper are as follows: 1)We present a simplified Lagrangian subtle motion magnification, which barely needs manual intervention. 2)The ”as-similar-as-possible” approach is applied to motion amplification. 3)Foreground separation and texture synthesis are used in our magnification to improve the details.
 	</p>
-<h2>Selective Segmentation</h2>
+<h2>Video</h2>
 </br>
 	</br>
 	<div align="center">
