@@ -21,15 +21,6 @@
     <link rel="stylesheet" href="assets/css/typo.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
-    <script>
-        function loading() {
-            document.getElementsByClassName('avatar')[0].style.display = 'block';
-            document.getElementsByClassName('loading')[0].style.display = 'none';
-        }
-        function loading() {
-            document.querySelector('.avatar').style.display = 'block';
-        }
-    </script>
 </head>
 
 <body>
@@ -67,17 +58,18 @@
             <!-- 个人肖像 -->
             <section class="me">
                 <section class="portrait">
-                    <div class="loading" style="dispaly:none;">
+                    <div class="loading">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div> 
+                    </div>
                     <!-- 头像照片 -->
                      <!--<img class="avatar" src="/resume/assets/images/avatar_syf.jpg" onload="loading()">-->
-                     <img class="avatar" src="/resume/assets/images/avatar_syf.jpg" style="display: block;">
+                     <img class="avatar_syf" src="./assets/images/avatar_syf.jpg" onload='document.querySelector(".me .loading").style.display = "none";document.querySelector(".me .avatar_syf").style.display = "block";'>
                 </section>
+
                 <h1 class="name">施云飞</h1>
                 <h4 class="info-job">计算机视觉工程师 / 宜昌</h4>
 
