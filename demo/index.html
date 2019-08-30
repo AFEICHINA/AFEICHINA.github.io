@@ -21,15 +21,10 @@
     <link rel="stylesheet" href="assets/css/typo.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
-    <script type="text/javascript">
-        function load() {
-          document.querySelector('.me .loading').style.display = "none"; //loading图隐藏
-          document.querySelector('.me .avatar_syf').style.display = "block";  //头像显示
-        }
-    </script>
 </head>
 
 <body>
+
     <header class="header"></header>
 
     <article class="container">
@@ -72,7 +67,7 @@
                     </div>
                     <!-- 头像照片 -->
                      <!--<img class="avatar" src="/resume/assets/images/avatar_syf.jpg" onload="loading()">-->
-                     <img class="avatar_syf" src="./assets/images/avatar_syf.jpg" onload="load()">
+                     <img class="avatar_syf" src="./assets/images/avatar_syf.jpg" onload='document.querySelector(".me .loading").style.display = "none";document.querySelector(".me .avatar_syf").style.display = "block";'>
                 </section>
 
                 <h1 class="name">施云飞</h1>
@@ -146,7 +141,6 @@
                     </li>              
                 </ul>
             </section>
-
 
             <!-- 技术栈 -->
             <!-- <div class="stack info-unit">
@@ -359,11 +353,7 @@
             </li>
         </ul>
     </aside>
-    <script type="text/javascript">
-      function loading() {
-        document.querySelector('.me .loading').style.display = "none";
-      }
-  </script>
+
     <script src="./assets/js/index.js"></script>
 </body>
 
